@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="lezhi.css">
+        <script type="text/javascript" src="JS/jquery-1.9.1.min.js"></script>
+        <script type="text/javascript" src="lezhi.js"></script>
+        <script type="text/javascript" src="JS/common.js"></script>
+    </head>
+    <body>
+    <div id="mask">
+	    <div id="mask1">
+	      <button class="btn">X</button>
+	      <div id="sjx"></div>
+	      <div id="sjx1"></div>
+	      <div id="mask1s">
+	    	<img src="logo_new.jpg" width="150" height="40">
+	    	<span>欢迎登录</span>
+	    	<a href="#" id="ljzc">立即注册</a>
+	      </div>
+	      <div id="mask1z">
+	    	<img src="login_left_bj.png" alt="">
+	    	<div id="mask1zy">
+	    	<span id="denglu1">账号密码登录</span>
+	    	<span id="denglu2">短信验证码登录</span><br>
+	    	<input type="text" placeholder="请输入手机号码" id="put1" value=""><br>
+	    	<input type="text" placeholder="请输入密码(6-12位字符)" id="put2" value="">
+	    	<button id="put5">发送验证码</button><br>
+	    	<input type="checkbox" id="put3">
+	    	<span id="span1"> 下次自动登录</span>
+	    	<span id="span2"><a href="#">忘记密码?</a></span><br>
+	    	<input type="button" value="登录" id="put4"><br>
+	    	<span id="span3"><a href="">微信登录</a></span>
+	    	</div>
+	      </div>
+	      <div id="mask1x">
+	      	<span><a href="#">乐至简介</a></span>
+	      	<span><a href="#">乐至快报</a></span>
+	      	<span><a href="#">企业服务</a></span>
+	      	<span><a href="#">人才服务</a></span>
+	      	<span><a href="#">正品优质</a></span>
+	      	<span><a href="#">加入了致</a></span>
+	      	<span><a href="#">联系我们</a></span>
+	      	<p>全国服务热线：400-996-5622 &copy; 2014了之王|增值电信业务许可证：皖B2-20090025|人才中介服务许可证：合[2007]005号</p>
+	      </div>
+	    </div>
+	    
+	    <div id="mask2">
+	    <button class="btn">X</button>
+	      <div id="mask2s">
+	    	<img src="logo_new.jpg" width="150" height="40">
+	    	<span>欢迎登录</span>
+	      </div>
+	      <div id="mask2z">
+	      	<input type="text" placeholder="请输入手机号码" id="dl1" value=""><br>
+	      	<input type="text" placeholder="请输入验证码">
+	      	<input type="button" value="发送短信验证码" id="put8"><br>
+	      	<input type="text" placeholder="请输入密码（6-12位字符）" id="dl2" value=""><br>
+	      	<input type="text" placeholder="请输入企业完整名称"><br>
+	      	<input type="text" placeholder="请输入联系人姓名"><br>
+	      	<input type="text" placeholder="请输入联系邮箱"><br>
+	      	<input type="button" value="立即注册" id="put7"><br>
+	      </div>
+	      <div id="mask2y">
+	      	<span>已有乐至账户：</span><br>
+	      	<span><a href="">直接登录 ></a></span><br>
+	      	<span>使用其他方式登录：</span><br><br>
+	      	<span id="put9">微信登录</span><br>
+	      </div>
+	      <div id="mask2x">
+	      	<span><a href="#">乐至简介</a></span>
+	      	<span><a href="#">乐至快报</a></span>
+	      	<span><a href="#">企业服务</a></span>
+	      	<span><a href="#">人才服务</a></span>
+	      	<span><a href="#">正品优质</a></span>
+	      	<span><a href="#">加入了致</a></span>
+	      	<span><a href="#">联系我们</a></span>
+	      	<p>全国服务热线：400-996-5622 &copy; 2014了之王|增值电信业务许可证：皖B2-20090025|人才中介服务许可证：合[2007]005号</p>
+	      </div>
+	    </div>
+    </div>
+
+    <div id="kefu">
+    	<p style="text-align:center;margin:10px auto;"><font size="5" color="#808080">在线客服</font></p>
+    	<p style="text-align:center;margin:3px auto;"><font size="5" color="red">400-996-5622</font></p>
+    	<p style="text-align:center;margin:3px auto;"><font size="4" color="#808080">全国统一客服热线</font></p><br>
+    	<div style="background:skyblue;width:100px;padding:10px 30px;margin:0 auto;text-align:center;cursor:pointer"><font size="4" color="#808080">在线QQ</font></div>
+    	<img src="lietou_weixin.jpg" height="150" width="150" alt="" style="margin:25px 25px 25px 25px;">
+    	<p style="text-align:center;padding:0 10px;"><font size="2" color="#808080">关注乐至公众号 微信体验招聘全体验六层</font></p>
+    	<p style="text-align:center;"><a href="#"><font size="2" color="#808080">我要反馈</font></p></a>
+    	<div>
+    		<span style="background:red;border-radius:5px 0 0 5px;display:block" id="kefu1"><font size="3" color="white">在线客服</font></span>
+    		<span style="background:red;border-radius:5px 0 0 5px;display:none" id="kefu2"><font size="3" color="white">点击关闭</font></span>
+    	</div>
+    </div>
+    
+    <div id="head">
+    	<div id="head1">
+    		<a href="#"><img src="logo_new.jpg" alt=""></a>
+    		<span><a href="#">全网人才库</a></span>
+    		<span><a href="#">企业招聘服务</a></span>
+    		<span><a href="#">我的职位</a></span>
+    		<span><a href="#">我的候选人</a></span>
+    		<span><a href="#">收藏的简历</a></span>
+    		<button id="btn1">登录</button>
+    		<button id="btn2">注册</button>
+    		<div id="btn3">
+    		<span>你好</span>欢迎光临！
+    		</div>
+    	</div>
+    </div>
+    <div id="z1">
+    	<div id="z11">
+    		<a href="#" id="img1"><img src="banner1.png" width="1500" height="500"></a>
+    		<a href="#" id="img2"><img src="banner2.png" width="1500" height="500"></a>
+    		<a href="#" id="img3"><img src="banner3_1.png" width="1500" height="500"></a>
+    	</div>
+    	<div id="z12">
+    		<span class="sp"></span>
+    		<span></span>
+    		<span></span>
+    	</div>
+    </div>
+    <div id="z2">
+    	<div id="z21">
+    	<p><b><font size="18">猎 头 级 全 网 人 才 库</font></b></p><br>
+    	<p><font size="4">五星级简历： 全网 · 鲜活 · 精准 · 细分 · 专业</font></p><br>
+	    	<input type="text" placeholder="支持更多关键词组合搜索  如：java 电子商务" id="sousuo1">
+	    	<button id="sousuo2"><font size="4">搜全网牛人</font></button>
+    	</div>
+    </div>
+    <div id="z3">
+      <div id="z30">
+		<div class="gd">
+			<span>热门行业人才</span>
+			<span>热门行业人才</span>
+			<span>发现牛人</span>
+		</div>
+		<div id="you">
+			<div class="z31 q">
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+			</div>
+			<div id="z31" class="j1 q">
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+			</div>
+			<div id="z32" class="j1 q">
+				<div id="z321">
+	    			<img src="p.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z321">
+	    			<img src="p.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z321">
+	    			<img src="p.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z321">
+	    			<img src="p.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z321">
+	    			<img src="p.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z321">
+	    			<img src="p.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z321">
+	    			<img src="p.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z321">
+	    			<img src="p.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z321">
+	    			<img src="p.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+			</div>
+			<div class="z31 j1 q">
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div class="z311">
+	    			<img src="ui.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+			</div>
+			<div id="z31"class="q">
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+				<div id="z311">
+	    			<img src="php.png" height="104" width="104" alt="">
+	    			<span class="div1">PHP工程师</span><br>
+	    			<span class="div2">全网24434人</span>
+	    			<span class="div3">马上抢</span>
+				</div>
+			</div>
+		</div>
+	  </div>	
+	</div>
+	<div class="dibu">
+		<div class="dibu1">
+	      	<span><a href="#">乐至简介</a></span>
+	      	<span><a href="#">乐至快报</a></span>
+	      	<span><a href="#">企业服务</a></span>
+	      	<span><a href="#">人才服务</a></span>
+	      	<span><a href="#">正品优质</a></span>
+	      	<span><a href="#">加入了致</a></span>
+	      	<span><a href="#">联系我们</a></span>
+	      	<p>全国服务热线：400-996-5622 &copy; 2014了之王|增值电信业务许可证：皖B2-20090025|人才中介服务许可证：合[2007]005号</p>
+		</div>
+	</div>
+    </body>
+</html>
