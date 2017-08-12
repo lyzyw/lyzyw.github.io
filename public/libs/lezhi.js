@@ -74,7 +74,6 @@ $(function(){
 	$("#z12 span").mouseover(function(){
 		var index=$(this).index();
 		var ys=["#0b9aff","#76C6FF","#6EDAF7"];
-		console.log(ys[index])
 		clearInterval(b);
 		
 		$("#z12 span").eq(index).addClass('sp').siblings('span').removeClass('sp');
@@ -86,12 +85,12 @@ $(function(){
 		index=$(this).index();
 	});
 	$("#kefu #kefu1").click(function(){
-		$("#kefu").css({"right":"0","transition":"all 1s linear"});
+		$("#kefu").css({"right":"0","transition":"all .5s linear"});
 		$("#kefu #kefu1").css("display","none");
 		$("#kefu #kefu2").css("display","block");
 	})
 	$("#kefu #kefu2").click(function(){
-		$("#kefu").css({"right":"-200px","transition":"all 1s linear"});
+		$("#kefu").css({"right":"-200px","transition":"all .5s linear"});
 		$("#kefu #kefu2").css("display","none");
 		$("#kefu #kefu1").css("display","block");
 	})
@@ -183,6 +182,7 @@ $(function(){
 		}
 	}
 	$("#you img").mouseover(function(){
+		p=$(this);
 		clearInterval(timer);
 		setTimeout(t,100);
 		setTimeout(t,200);
@@ -191,14 +191,13 @@ $(function(){
 		setTimeout(t,500);
 		setTimeout(t,600);
 		setTimeout(t,700);
-		p=$(this);
-		
 	});
 	$("#you img").mouseout(function(){
 		timer=setInterval(h,2000);
 	});
 	$("#you .q div").mouseover(function(){
-		p.siblings('span').css("display","block")
+		q=$(this);
+		q.children('span').css("display","block")
 	})
 	$("#you .q div").mouseout(function(){
 		$("#you .div3").css("display","none")
@@ -210,31 +209,53 @@ $(function(){
 	var y1=document.querySelector("#dl2");
 	
 	$("#put4").click(function(){
-		x=x.value;
-		y=y.value;
-		console.log(x);
-		console.log(y);
-		// x=JSON.stringify(x);
-		// x=JSON.stringify(y);
+		a=x.value;
+		b=y.value;
+		console.log(a);
+		console.log(b);
 		var xhr=new XMLHttpRequest();
-		xhr.open("get","lezhi.php?name="+x+"&pwd="+y+"");
+		xhr.open("get","API/lezhi.php?name="+a+"&pwd="+b+"");
 		xhr.send();
 		xhr.onreadystatechange=function(){
     		if(xhr.readyState==4&&xhr.status==200){
-					var z=xhr.responseText
+					var z=xhr.responseText;
+					
 					console.log(z)
+					// console.log(JSON.parse(z));
+					if(z=="t"){
+						console.log(document.getElementById("ddd").children[0]);
+						document.getElementById("ddd").children[0].innerHTML=a+" 欢迎回家！";
+						$("#ddd a").css("display","block");
+						$("#btn1").css("display","none");
+						$("#btn2").css("display","none");
+						$("#mask").css("display","none");
+					}
     		}     
     	}
-    	
 	})
 
 	$("#put7").click(function(){
-		// var xhr=new XMLHttpRequest();
-		// xhr.open("get","xxx.php?name=www&pwd=123456")
-		// xhr.onreadystatechange=function(){
-  //   		xhr.readyState     xhr.status
-  //   	}
-  //   	xhr.responseText
+		a=x1.value;
+		b=y1.value;
+		console.log(a);
+		console.log(b);
+		var xhr=new XMLHttpRequest();
+		xhr.open("get","API/lezhi1.php?uname="+a+"&upwd="+b+"");
+		xhr.send();
+		xhr.onreadystatechange=function(){
+    		if(xhr.readyState==4&&xhr.status==200){
+					var z=xhr.responseText;
+					console.log(z);
+					if(z=="t"){
+						console.log(document.getElementById("ddd").children[0]);
+						document.getElementById("ddd").children[0].innerHTML=a+" 欢迎回家！";
+						$("#ddd a").css("display","block");
+						$("#btn1").css("display","none");
+						$("#btn2").css("display","none");
+						$("#mask").css("display","none");
+					}
+    		}     
+    	}
 	})
 	
 })
